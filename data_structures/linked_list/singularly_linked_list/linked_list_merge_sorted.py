@@ -188,7 +188,8 @@ class LinkedList:
             else:
                 s = q
                 q = s.next
-            new_head = s 
+            self.head = s 
+            llist.head = None
         while p and q:
             if p.data <= q.data:
                 s.next = p 
@@ -202,7 +203,7 @@ class LinkedList:
             s.next = q 
         if not q:
             s.next = p 
-        return new_head
+        
 
 llist_1 = LinkedList()
 llist_2 = LinkedList()
